@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message:\n$message\n";
 
     // Set the sender email to your domain email
-    $headers = "From: info@foundlinkdigital.com";
+    $headers = "From: web@webmasters.foundlinkdigital.com";
     $headers .= "\r\nReply-To: $email";
 
     // Send the email
