@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Masters</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="./index.html" class="text-xl font-bold">Website Masters</a>
+            <div class="flex space-x-4">
+                <a href="./portfolio.html" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Samples</a>
+                <a href="https://chat.whatsapp.com/KGQzwfqdoHtGDpsn8SOA8A" class="bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md">Whatsapp</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero bg-cover bg-center" style="background-image: url('./assets/web.jpeg'); height: 60vh;">
+        <div class="container mx-auto flex items-center justify-center h-full">
+            <div class="text-center text-white p-10 bg-gray-900/50">
+                <!-- Responsive Typography -->
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">Welcome to Website Masters</h1>
+                <p class="text-sm sm:text-base md:text-lg mt-4">Your best Website Agency</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="services py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+                    <p>We design responsive, scalable, and visually captivating websites that enhance your brand and drive growth.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Wordpress Management</h3>
+                    <p>From customization to optimization, we ensure your WordPress site is secure, efficient, and up-to-date.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Maintenance and Web Support</h3>
+                    <p>We provide ongoing maintenance and support to keep your website updated, secure, and running smoothly.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">E-Commerce Development</h3>
+                    <p>We design custom e-commerce solutions with product listings, shopping carts, and secure payment systems, ensuring a seamless shopping experience.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Back-End Development</h3>
+                    <p>We provide server-side programming and database management services, using robust technologies to ensure secure and efficient website functionality.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Hosting and Domain Registration</h3>
+                    <p>We offer reliable website hosting and domain registration services to get your site online effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tagline py-20 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <p class="text-2xl font-semibold">"We Are Your Digital Hub"</p> 
+        </div>
+    </section>
+
+    <section class="websites py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get a Beautiful Website for Online Presence</h2>
+            <a href="./contact.html" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Contact Us Now</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; <span id="year"></span> Website Masters. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript to dynamically update the year
+        const yearElement = document.getElementById('year');
+        yearElement.textContent = new Date().getFullYear();
+    </script>
+    
+
+</body>
+</html>
